@@ -10,8 +10,9 @@ import utils.Utility;
 
 public class ProjectSpecificationMethod extends Utility{
 
-	@Parameters({"siteUrl"})
+	
 	@BeforeSuite
+	@Parameters({"siteUrl"})
 	//check for the url is broken or not
 	public void validateUrlConnection(String siteUrl) throws IOException {			
 		urlConnectionValidation(siteUrl);		
