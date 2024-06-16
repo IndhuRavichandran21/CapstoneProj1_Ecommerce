@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +27,7 @@ public class SearchByBrand extends ProjectSpecificationMethod{
 	@FindBy(xpath = "//a[contains(@class,'go-to-cart')]")
 	WebElement viewCart;
 
+	//search the item based on brand and add it to cart
 	public void selectByBrand(String brandName, String product, String productUrl) {
 		menu.click();
 		selectBrand.click();
@@ -36,9 +38,19 @@ public class SearchByBrand extends ProjectSpecificationMethod{
 		select_Brands_SubCategory.click();
 		
 		try {
-			handleActions(productUrl);
+			//handleActions(productUrl);
+			//driver.findElement(By.xpath("//a[@href='"+productUrl+"']/ancestor::div[@class='column-middle']/following-sibling::div//div[@class='fulfillment-add-to-cart-button']"));		
+			
+			JavascriptExecutor js = (JavascriptExecutor) driver;					
+			js.executeScript("arguments[0].scrollIntoView(true)", driver.findElement(By.xpath("//a[@href='"+productUrl+"']/ancestor::li[@class='sku-item']")));	
+			WebElement addProductToCart=driver.findElement(By.xpath("//a[@href='"+productUrl+"']/ancestor::div[@class='column-middle']/following-sibling::div//div[@class='fulfillment-add-to-cart-button']"));		
+			Thread.sleep(10000);
+			addProductToCart.click();	
+			Thread.sleep(10000);
 			viewCart.click();
-		} catch (Exception e) {
+			
+		} 
+		catch (Exception e) {
 			System.out.println("Product Not Found");
 		}
 						

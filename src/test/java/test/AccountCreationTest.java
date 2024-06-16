@@ -9,8 +9,10 @@ import pages.HomePage;
 
 public class AccountCreationTest extends ProjectSpecificationMethod{
 	
+	//account creation with valid credentials
 	@Test(priority = 1, dataProvider = "valid_AccountCreationDetails")
-	public void createAccount_ValidCred(String firstName,String lastName, String emailId, String password, String confirmPassword, String phoneNumber) {
+	public void createAccount_ValidCred(String firstName,String lastName, String emailId, String password, 
+			String confirmPassword, String phoneNumber) throws InterruptedException{
 		HomePage homePageObj = new HomePage(driver);
 		AccountCreationPage accountCreationPageObj = new AccountCreationPage(driver);
 		homePageObj.clickAccountSelection();
@@ -19,8 +21,10 @@ public class AccountCreationTest extends ProjectSpecificationMethod{
 		
 	}
 	
+	//account creation with Invalid credentials
 	@Test(priority = 2, dataProvider = "invalid_AccountCreationDetails")
-	public void createAccount_InValidCred(String firstName,String lastName, String emailId, String password, String confirmPassword, String phoneNumber) {
+	public void createAccount_InValidCred(String firstName,String lastName, String emailId, String password, 
+			String confirmPassword, String phoneNumber) throws InterruptedException{
 		HomePage homePageObj = new HomePage(driver);
 		AccountCreationPage accountCreationPageObj = new AccountCreationPage(driver);
 		homePageObj.clickAccountSelection();

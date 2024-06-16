@@ -12,10 +12,11 @@ import pages.SignInPage;
 
 public class OrderPlaceTest extends ProjectSpecificationMethod{
 
+	//checkout item and add payment details and place the order
 	@Test(priority=1, dataProvider = "paymentDetails")
-	public void searchProduct(String productName, String productUrl, String emailId, 
+	public void placeOrder(String productName, String productUrl, String emailId, 
 			String phoneNumber, String cardNumber, String firstName, String lastName, 
-			String address, String city, String state, String zipCode) {
+			String address, String city, String state, String zipCode) throws InterruptedException {
 		
 		SearchAndFilterPage searchAndFilterObj = new SearchAndFilterPage(driver);
 		CartPage cartPageObj = new CartPage(driver);
@@ -24,15 +25,16 @@ public class OrderPlaceTest extends ProjectSpecificationMethod{
 		PaymentPage paymentPageObj = new PaymentPage(driver);
 		
 		searchAndFilterObj.searchItem(productName, productUrl);
-		cartPageObj.checkOut();
+		cartPageObj.checkOut();		
 		signInPageObj.guestUser();
         try {
         	
-        	checkOutPageObj.enterContactInfo(emailId, phoneNumber);		
+        	checkOutPageObj.enterContactInfo(firstName, lastName, address, city, state, zipCode, emailId, phoneNumber);		
     		paymentPageObj.paymentDetails(cardNumber, firstName, lastName, address, city, state, zipCode);
 			
 		} catch (Exception e) {
-			if(driver.findElement(By.xpath("//div//span[text()='Request failed because of network connection']")).isDisplayed())
+			int size1 = driver.findElements(By.xpath("//div//span[text()='Request failed because of network connection']")).size();
+			if(size1==1)
 			System.out.println("Unable to place the order due to network connection");
 			else
 				System.out.println(e);

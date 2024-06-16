@@ -17,7 +17,9 @@ public class CartPage {
 	@FindBy(xpath = "//button[text()='Checkout']")
 	WebElement checkOutBtn;
 	
-	public void checkOut() {
-		checkOutBtn.click();
+	//select checkout button 
+	public void checkOut() throws InterruptedException {
+		Thread.sleep(5000);
+		checkOutBtn.click();	
 	}
 }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">36 methods, 4 failed,  12 skipped,  20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.OrderPlaceTest" class="method navigator-link" hash-for-method="placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.OrderPlaceTest" class="method navigator-link" hash-for-method="placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)">searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.BottomLinksTest" class="method navigator-link" hash-for-method="bottomLinkValidation">bottomLinkValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AccountCreationTest" class="method navigator-link" hash-for-method="createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)">createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AccountCreationTest" class="method navigator-link" hash-for-method="createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)">createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)">filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.OrderPlaceTest" class="method navigator-link" hash-for-method="placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)">searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ByBrandSelectionTest" class="method navigator-link" hash-for-method="selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)">selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ByDepartmentSelectionTest" class="method navigator-link" hash-for-method="selectByDept(Appliances, Vacuums &amp; Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)">selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.SignInTest" class="method navigator-link" hash-for-method="signIn_InValidCred(qasurt@co, 123)">signIn_InValidCred(qasurt@co, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.SignInTest" class="method navigator-link" hash-for-method="signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)">signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.MenuVaildationTest" class="method navigator-link" hash-for-method="validateMenu">validateMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +201,102 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.BottomLinksTest" class="method navigator-link" hash-for-method="bottomLinkValidation">bottomLinkValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.BottomLinksTest" class="method navigator-link" hash-for-method="bottomLinkValidation">bottomLinkValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AccountCreationTest" class="method navigator-link" hash-for-method="createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)">createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AccountCreationTest" class="method navigator-link" hash-for-method="createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)">createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AccountCreationTest" class="method navigator-link" hash-for-method="createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)">createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AccountCreationTest" class="method navigator-link" hash-for-method="createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)">createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)">filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)">filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)">searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ProductSearchAndFilterTest" class="method navigator-link" hash-for-method="searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ByBrandSelectionTest" class="method navigator-link" hash-for-method="selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)">selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ByBrandSelectionTest" class="method navigator-link" hash-for-method="selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)">selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ByDepartmentSelectionTest" class="method navigator-link" hash-for-method="selectByDept(Appliances, Vacuums &amp; Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)">selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.ByDepartmentSelectionTest" class="method navigator-link" hash-for-method="selectByDept(Appliances, Vacuums &amp; Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)">selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.SignInTest" class="method navigator-link" hash-for-method="signIn_InValidCred(qasurt@co, 123)">signIn_InValidCred(qasurt@co, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.SignInTest" class="method navigator-link" hash-for-method="signIn_InValidCred(qasurt@co, 123)">signIn_InValidCred(qasurt@co, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.SignInTest" class="method navigator-link" hash-for-method="signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)">signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.SignInTest" class="method navigator-link" hash-for-method="signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)">signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.MenuVaildationTest" class="method navigator-link" hash-for-method="validateMenu">validateMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.MenuVaildationTest" class="method navigator-link" hash-for-method="validateMenu">validateMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -118,6 +311,731 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.OrderPlaceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">
+                  </a> <!-- placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...) -->
+                  <span class="method-name">placeOrder</span>
+                  <span class="parameters">(Apple air pods,/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551,qaautomationtest111@gmail.com,9.87654321E9,123456.0,Test,User,11, xxx cross street, xxx,xelo,TN,132444.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;cardError&apos;]//p&quot;}
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e515140fc165194a75ef6f57c51949cb, findElement {value=//div[@id=&apos;cardError&apos;]//p, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54755/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e515140fc165194a75ef6f57c51949cb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at test.OrderPlaceTest.placeOrder(OrderPlaceTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">
+                  </a> <!-- placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...) -->
+                  <span class="method-name">placeOrder</span>
+                  <span class="parameters">(Apple air pods,/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551,qaautomationtest111@gmail.com,9.87654321E9,123456.0,Test,User,11, xxx cross street, xxx,xelo,TN,132444.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@id=&apos;cardError&apos;]//p
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0dfa6565-1a50-40b0-a7aa-bfe342dc945b, findElement {value=//div[@id=&apos;cardError&apos;]//p, using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:45307, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14332, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45307/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 0dfa6565-1a50-40b0-a7aa-bfe342dc945b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at test.OrderPlaceTest.placeOrder(OrderPlaceTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ProductSearchAndFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)">
+                  </a> <!-- searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177) -->
+                  <span class="method-name">searchProduct</span>
+                  <span class="parameters">(samsung mobiles,/site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;c-button-link go-to-cart&quot; href=&quot;/cart&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2766bc05-50c6-4392-af2d-82e2bc9e82fa, clickElement {id=6e8ea5f9-ce69-4393-96ab-30613635c55e}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:13527, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17772, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:13527/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (2766bc05-50c6-4392-af2d-82e2bc9e82fa)] -&gt; xpath: //a[contains(@class,&apos;go-to-cart&apos;)]]
+Session ID: 2766bc05-50c6-4392-af2d-82e2bc9e82fa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at pages.SearchAndFilterPage.searchItem(SearchAndFilterPage.java:52)
+	at test.ProductSearchAndFilterTest.searchProduct(ProductSearchAndFilterTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">
+                  </a> <!-- searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...) -->
+                  <span class="method-name">searchProduct</span>
+                  <span class="parameters">(Apple air pods,/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@href=&apos;/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551&apos;]/ancestor::div[@class=&apos;column-middle&apos;]/following-sibling::div//button[contains(@class,&apos;add-to-cart-button&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [efef6a7b-c316-47ed-92cc-4c2490551863, findElement {value=//a[@href=&apos;/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551&apos;]/ancestor::div[@class=&apos;column-middle&apos;]/following-sibling::div//button[contains(@class,&apos;add-to-cart-button&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0, moz:accessibilityChecks: false, moz:buildID: 20240606181944, moz:debuggerAddress: 127.0.0.1:26541, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9548, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:26541/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: efef6a7b-c316-47ed-92cc-4c2490551863
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.SearchAndFilterPage.searchItem(SearchAndFilterPage.java:44)
+	at test.ProductSearchAndFilterTest.searchProduct(ProductSearchAndFilterTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.SignInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_InValidCred(qasurt@co, 123)">
+                  </a> <!-- signIn_InValidCred(qasurt@co, 123) -->
+                  <span class="method-name">signIn_InValidCred</span>
+                  <span class="parameters">(qasurt@co,123)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7d3bdb30a400e279ca94f08922ceb65, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59299/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7d3bdb30a400e279ca94f08922ceb65
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)">
+                  </a> <!-- signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123) -->
+                  <span class="method-name">signIn_ValidCred</span>
+                  <span class="parameters">(qaautomationtest111@gmail.com,Automation@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7d3bdb30a400e279ca94f08922ceb65, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59299/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7d3bdb30a400e279ca94f08922ceb65
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.OrderPlaceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">
+                  </a> <!-- placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...) -->
+                  <span class="method-name">placeOrder</span>
+                  <span class="parameters">(Apple air pods,/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551,qaautomationtest111@gmail.com,9.87654321E9,123456.0,Test,User,11, xxx cross street, xxx,xelo,TN,132444.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a05c095433f1f7a9eb96fa98436bdd6, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59345}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59345/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a05c095433f1f7a9eb96fa98436bdd6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.MenuVaildationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMenu">
+                  </a> <!-- validateMenu -->
+                  <span class="method-name">validateMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40a0a29990b3ad6c4f4b2d028e3dbe76, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59322/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 40a0a29990b3ad6c4f4b2d028e3dbe76
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.ByDepartmentSelectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByDept(Appliances, Vacuums &amp; Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)">
+                  </a> <!-- selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...) -->
+                  <span class="method-name">selectByDept</span>
+                  <span class="parameters">(Appliances,Vacuums & Floor Care,Steam Mops,/site/shark-steam-scrub-with-steam-blaster-technology-hard-floor-steam-mop-gray-rose-gold/6535213.p?skuId=6535213)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ae9b3cdb5a095200e2c4c914aa65339, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59357/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ae9b3cdb5a095200e2c4c914aa65339
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.ProductSearchAndFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)">
+                  </a> <!-- filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black) -->
+                  <span class="method-name">filterSearchResults</span>
+                  <span class="parameters">(mouse,$75 - $99.99,Logitech,Wireless,Black)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9a41e4ba0e1828cbdc51dbd63c43fb7, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59334/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9a41e4ba0e1828cbdc51dbd63c43fb7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)">
+                  </a> <!-- searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177) -->
+                  <span class="method-name">searchProduct</span>
+                  <span class="parameters">(samsung mobiles,/site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9a41e4ba0e1828cbdc51dbd63c43fb7, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59334/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9a41e4ba0e1828cbdc51dbd63c43fb7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">
+                  </a> <!-- searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...) -->
+                  <span class="method-name">searchProduct</span>
+                  <span class="parameters">(Apple air pods,/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9a41e4ba0e1828cbdc51dbd63c43fb7, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59334/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9a41e4ba0e1828cbdc51dbd63c43fb7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.ByBrandSelectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)">
+                  </a> <!-- selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...) -->
+                  <span class="method-name">selectByBrand</span>
+                  <span class="parameters">(HP,HP laptops,/site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=6569838)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9777ef345c05e391d937bb000366da4, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59369/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9777ef345c05e391d937bb000366da4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.BottomLinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bottomLinkValidation">
+                  </a> <!-- bottomLinkValidation -->
+                  <span class="method-name">bottomLinkValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3bc002596ac89aeedff4ec884e7ce3d, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59310/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3bc002596ac89aeedff4ec884e7ce3d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.AccountCreationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)">
+                  </a> <!-- createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234) -->
+                  <span class="method-name">createAccount_InValidCred</span>
+                  <span class="parameters">(T,U,qasurt@co,123,123,1234)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e764fc259db39a9cae5a6d4ebf1008b, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59286}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59286/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e764fc259db39a9cae5a6d4ebf1008b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)">
+                  </a> <!-- createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9) -->
+                  <span class="method-name">createAccount_ValidCred</span>
+                  <span class="parameters">(Test,User,qaautomationtest111@gmail.com,Automation@123,Automation@123,9.87654321E9)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e764fc259db39a9cae5a6d4ebf1008b, get {url=https://www.bestbuy.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59286}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59286/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e764fc259db39a9cae5a6d4ebf1008b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utils.Utility.browserLaunch(Utility.java:77)
+	at base.ProjectSpecificationMethod.launchBrowser(ProjectSpecificationMethod.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.SignInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_InValidCred(qasurt@co, 123)">
+                  </a> <!-- signIn_InValidCred(qasurt@co, 123) -->
+                  <span class="method-name">signIn_InValidCred</span>
+                  <span class="parameters">(qasurt@co,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_InValidCred(qasurt@co, 123)">
+                  </a> <!-- signIn_InValidCred(qasurt@co, 123) -->
+                  <span class="method-name">signIn_InValidCred</span>
+                  <span class="parameters">(qasurt@co,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)">
+                  </a> <!-- signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123) -->
+                  <span class="method-name">signIn_ValidCred</span>
+                  <span class="parameters">(qaautomationtest111@gmail.com,Automation@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)">
+                  </a> <!-- signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123) -->
+                  <span class="method-name">signIn_ValidCred</span>
+                  <span class="parameters">(qaautomationtest111@gmail.com,Automation@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ByDepartmentSelectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByDept(Appliances, Vacuums &amp; Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)">
+                  </a> <!-- selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...) -->
+                  <span class="method-name">selectByDept</span>
+                  <span class="parameters">(Appliances,Vacuums & Floor Care,Steam Mops,/site/shark-steam-scrub-with-steam-blaster-technology-hard-floor-steam-mop-gray-rose-gold/6535213.p?skuId=6535213)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByDept(Appliances, Vacuums &amp; Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)">
+                  </a> <!-- selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...) -->
+                  <span class="method-name">selectByDept</span>
+                  <span class="parameters">(Appliances,Vacuums & Floor Care,Steam Mops,/site/shark-steam-scrub-with-steam-blaster-technology-hard-floor-steam-mop-gray-rose-gold/6535213.p?skuId=6535213)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.MenuVaildationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMenu">
+                  </a> <!-- validateMenu -->
+                  <span class="method-name">validateMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMenu">
+                  </a> <!-- validateMenu -->
+                  <span class="method-name">validateMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ByBrandSelectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)">
+                  </a> <!-- selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...) -->
+                  <span class="method-name">selectByBrand</span>
+                  <span class="parameters">(HP,HP laptops,/site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=6569838)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)">
+                  </a> <!-- selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...) -->
+                  <span class="method-name">selectByBrand</span>
+                  <span class="parameters">(HP,HP laptops,/site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=6569838)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ProductSearchAndFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)">
+                  </a> <!-- filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black) -->
+                  <span class="method-name">filterSearchResults</span>
+                  <span class="parameters">(mouse,$75 - $99.99,Logitech,Wireless,Black)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)">
+                  </a> <!-- filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black) -->
+                  <span class="method-name">filterSearchResults</span>
+                  <span class="parameters">(mouse,$75 - $99.99,Logitech,Wireless,Black)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)">
+                  </a> <!-- searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177) -->
+                  <span class="method-name">searchProduct</span>
+                  <span class="parameters">(samsung mobiles,/site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)">
+                  </a> <!-- searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...) -->
+                  <span class="method-name">searchProduct</span>
+                  <span class="parameters">(Apple air pods,/site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.BottomLinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bottomLinkValidation">
+                  </a> <!-- bottomLinkValidation -->
+                  <span class="method-name">bottomLinkValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bottomLinkValidation">
+                  </a> <!-- bottomLinkValidation -->
+                  <span class="method-name">bottomLinkValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -130,6 +1048,30 @@
                   </a> <!-- createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234) -->
                   <span class="method-name">createAccount_InValidCred</span>
                   <span class="parameters">(T,U,qasurt@co,123,123,1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)">
+                  </a> <!-- createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234) -->
+                  <span class="method-name">createAccount_InValidCred</span>
+                  <span class="parameters">(T,U,qasurt@co,123,123,1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)">
+                  </a> <!-- createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9) -->
+                  <span class="method-name">createAccount_ValidCred</span>
+                  <span class="parameters">(Test,User,qaautomationtest111@gmail.com,Automation@123,Automation@123,9.87654321E9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)">
+                  </a> <!-- createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9) -->
+                  <span class="method-name">createAccount_ValidCred</span>
+                  <span class="parameters">(Test,User,qaautomationtest111@gmail.com,Automation@123,Automation@123,9.87654321E9)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -148,13 +1090,48 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.Listener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;country&quot; value=&quot;US&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.AccountCreationTest&quot;/&gt;
+      &lt;class name=&quot;test.SignInTest&quot;/&gt;
+      &lt;class name=&quot;test.BottomLinksTest&quot;/&gt;
+      &lt;class name=&quot;test.MenuVaildationTest&quot;/&gt;
+      &lt;class name=&quot;test.ProductSearchAndFilterTest&quot;/&gt;
+      &lt;class name=&quot;test.OrderPlaceTest&quot;/&gt;
+      &lt;class name=&quot;test.ByDepartmentSelectionTest&quot;/&gt;
+      &lt;class name=&quot;test.ByBrandSelectionTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;country&quot; value=&quot;US&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.AccountCreationTest&quot;/&gt;
+      &lt;class name=&quot;test.SignInTest&quot;/&gt;
+      &lt;class name=&quot;test.BottomLinksTest&quot;/&gt;
+      &lt;class name=&quot;test.MenuVaildationTest&quot;/&gt;
+      &lt;class name=&quot;test.ProductSearchAndFilterTest&quot;/&gt;
+      &lt;class name=&quot;test.OrderPlaceTest&quot;/&gt;
+      &lt;class name=&quot;test.ByDepartmentSelectionTest&quot;/&gt;
+      &lt;class name=&quot;test.ByBrandSelectionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HeadlessTest&quot;&gt;
+    &lt;parameter name=&quot;country&quot; value=&quot;US&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;headless&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.AccountCreationTest&quot;/&gt;
+      &lt;class name=&quot;test.SignInTest&quot;/&gt;
+      &lt;class name=&quot;test.BottomLinksTest&quot;/&gt;
+      &lt;class name=&quot;test.MenuVaildationTest&quot;/&gt;
+      &lt;class name=&quot;test.ProductSearchAndFilterTest&quot;/&gt;
+      &lt;class name=&quot;test.OrderPlaceTest&quot;/&gt;
+      &lt;class name=&quot;test.ByDepartmentSelectionTest&quot;/&gt;
+      &lt;class name=&quot;test.ByBrandSelectionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HeadlessTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,7 +1143,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">ChromeTest (8 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (8 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">HeadlessTest (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,16 +1175,156 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(36);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createAccount_InValidCred')
-data.setCell(0, 2, 'test.AccountCreationTest')
-data.setCell(0, 3, 148764);
+data.setCell(0, 1, 'placeOrder')
+data.setCell(0, 2, 'test.OrderPlaceTest')
+data.setCell(0, 3, 97472);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'placeOrder')
+data.setCell(1, 2, 'test.OrderPlaceTest')
+data.setCell(1, 3, 77695);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'selectByBrand')
+data.setCell(2, 2, 'test.ByBrandSelectionTest')
+data.setCell(2, 3, 54328);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateMenu')
+data.setCell(3, 2, 'test.MenuVaildationTest')
+data.setCell(3, 3, 53820);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateMenu')
+data.setCell(4, 2, 'test.MenuVaildationTest')
+data.setCell(4, 3, 53438);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'bottomLinkValidation')
+data.setCell(5, 2, 'test.BottomLinksTest')
+data.setCell(5, 3, 49814);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'bottomLinkValidation')
+data.setCell(6, 2, 'test.BottomLinksTest')
+data.setCell(6, 3, 48693);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'selectByBrand')
+data.setCell(7, 2, 'test.ByBrandSelectionTest')
+data.setCell(7, 3, 48570);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'selectByDept')
+data.setCell(8, 2, 'test.ByDepartmentSelectionTest')
+data.setCell(8, 3, 44416);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchProduct')
+data.setCell(9, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(9, 3, 39737);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'selectByDept')
+data.setCell(10, 2, 'test.ByDepartmentSelectionTest')
+data.setCell(10, 3, 39156);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'searchProduct')
+data.setCell(11, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(11, 3, 38735);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'searchProduct')
+data.setCell(12, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(12, 3, 30399);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'searchProduct')
+data.setCell(13, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(13, 3, 23661);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createAccount_InValidCred')
+data.setCell(14, 2, 'test.AccountCreationTest')
+data.setCell(14, 3, 16625);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'createAccount_ValidCred')
+data.setCell(15, 2, 'test.AccountCreationTest')
+data.setCell(15, 3, 16355);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'filterSearchResults')
+data.setCell(16, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(16, 3, 15957);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'filterSearchResults')
+data.setCell(17, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(17, 3, 15040);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'createAccount_ValidCred')
+data.setCell(18, 2, 'test.AccountCreationTest')
+data.setCell(18, 3, 15001);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'createAccount_InValidCred')
+data.setCell(19, 2, 'test.AccountCreationTest')
+data.setCell(19, 3, 14736);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'signIn_ValidCred')
+data.setCell(20, 2, 'test.SignInTest')
+data.setCell(20, 3, 7843);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'signIn_ValidCred')
+data.setCell(21, 2, 'test.SignInTest')
+data.setCell(21, 3, 7600);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'signIn_InValidCred')
+data.setCell(22, 2, 'test.SignInTest')
+data.setCell(22, 3, 7126);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'signIn_InValidCred')
+data.setCell(23, 2, 'test.SignInTest')
+data.setCell(23, 3, 7098);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'signIn_InValidCred')
+data.setCell(24, 2, 'test.SignInTest')
+data.setCell(24, 3, 4);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'bottomLinkValidation')
+data.setCell(25, 2, 'test.BottomLinksTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'createAccount_InValidCred')
+data.setCell(26, 2, 'test.AccountCreationTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'selectByDept')
+data.setCell(27, 2, 'test.ByDepartmentSelectionTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'placeOrder')
+data.setCell(28, 2, 'test.OrderPlaceTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'signIn_ValidCred')
+data.setCell(29, 2, 'test.SignInTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'createAccount_ValidCred')
+data.setCell(30, 2, 'test.AccountCreationTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validateMenu')
+data.setCell(31, 2, 'test.MenuVaildationTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'selectByBrand')
+data.setCell(32, 2, 'test.ByBrandSelectionTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'searchProduct')
+data.setCell(33, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'searchProduct')
+data.setCell(34, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'filterSearchResults')
+data.setCell(35, 2, 'test.ProductSearchAndFilterTest')
+data.setCell(35, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -216,9 +1339,86 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">21 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.SignInTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.OrderPlaceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.MenuVaildationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.ByDepartmentSelectionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.ProductSearchAndFilterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.ByBrandSelectionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.BottomLinksTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+                <span class="ignored-method-name">validateUrlConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -234,16 +1434,433 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
-                <span class="method-start">13556 ms</span>
+                <span class="method-start">11776 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)</span>
-                <span class="method-start">69572 ms</span>
+                <span class="method-name">createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)</span>
+                <span class="method-start">41027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">218428 ms</span>
+                <span class="method-start">57403 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">58862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)</span>
+                <span class="method-start">86355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">101095 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.SignInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">101819 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)</span>
+                <span class="method-start">134773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">142378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">143353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signIn_InValidCred(qasurt@co, 123)</span>
+                <span class="method-start">173469 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">180572 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.BottomLinksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">181482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bottomLinkValidation</span>
+                <span class="method-start">210803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">259499 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.MenuVaildationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">260221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMenu</span>
+                <span class="method-start">288882 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">342329 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ProductSearchAndFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">343531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</span>
+                <span class="method-start">373268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">412011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">413185 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</span>
+                <span class="method-start">443422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">483162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">484690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)</span>
+                <span class="method-start">515402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">531361 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.OrderPlaceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">533055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</span>
+                <span class="method-start">564473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">662197 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ByDepartmentSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">663338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)</span>
+                <span class="method-start">693870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">733030 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ByBrandSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(chrome, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">734392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)</span>
+                <span class="method-start">764945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">813519 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AccountCreationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">815468 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccount_ValidCred(Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9)</span>
+                <span class="method-start">858553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">873556 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">876181 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccount_InValidCred(T, U, qasurt@co, 123, 123, 1234)</span>
+                <span class="method-start">907567 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">924194 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.SignInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">926312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signIn_ValidCred(qaautomationtest111@gmail.com, Automation@123)</span>
+                <span class="method-start">960628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">968473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">970379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signIn_InValidCred(qasurt@co, 123)</span>
+                <span class="method-start">1004569 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1011698 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.BottomLinksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1013529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bottomLinkValidation</span>
+                <span class="method-start">1048255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1098074 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.MenuVaildationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1099945 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMenu</span>
+                <span class="method-start">1130615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1184468 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ProductSearchAndFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1187323 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchProduct(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</span>
+                <span class="method-start">1211584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1235393 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1237366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchProduct(samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177)</span>
+                <span class="method-start">1270299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1300900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1302731 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">filterSearchResults(mouse, $75 - $99.99, Logitech, Wireless, Black)</span>
+                <span class="method-start">1334718 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1349760 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.OrderPlaceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1352146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">placeOrder(Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuI...)</span>
+                <span class="method-start">1382368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1460187 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ByDepartmentSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1462043 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectByDept(Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-...)</span>
+                <span class="method-start">1493989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1538411 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ByBrandSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(firefox, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1540858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectByBrand(HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=656...)</span>
+                <span class="method-start">1572787 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1627117 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AccountCreationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1630020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">1657439 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.SignInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1657557 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">1659321 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.BottomLinksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1659354 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.MenuVaildationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1660863 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ProductSearchAndFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1668602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">1670250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">1670342 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.OrderPlaceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1670418 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ByDepartmentSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1672061 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ByBrandSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser(headless, https://www.bestbuy.com/, US)</span>
+                <span class="method-start">1673740 ms</span>
+              </div> <!-- configuration-method before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

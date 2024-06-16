@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 13 20:32:50 IST 2024</td>
+<td>Started on:</td><td>Sun Jun 16 19:19:50 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>208 seconds (208679 ms)</td>
+<tr><td>Total time:</td><td>831 seconds (831487 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,189 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.ByDepartmentSelectionTest.selectByDept()'><b>selectByDept</b><br>Test class: test.ByDepartmentSelectionTest<br>Parameters: Appliances, Vacuums & Floor Care, Steam Mops, /site/shark-steam-scrub-with-steam-blaster-technology-hard-floor-steam-mop-gray-rose-gold/6535213.p?skuId=6535213</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;nav aria-label=&quot;Main&quot; class=&quot;hamburger-menu&quot;&gt;...&lt;/nav&gt; is not clickable at point (199, 237). Other element would receive the click: &lt;div id=&quot;survey_window&quot; class=&quot;modal fade modal-open out&quot; role=&quot;dialog&quot; style=&quot;margin-top: 170px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fceb83dfec5c25b1b50760ce54a0628a, clickElement {id=f.CCEC882696BB15172A333F26804C87C1.d.E05F933172F669A8503ECDB7D1146967.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51781/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fceb83dfec5c25b1b50760ce54a0628a)] -&gt; css selector: .hamburger-menu]
+Session ID: fceb83dfec5c25b1b50760ce54a0628a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at pages.SearchByDepartment.selectByDept(SearchByDepartment.java:29)
+	at test.ByDepartmentSelectionTest.selectByDept(ByDepartmentSelectionTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1109466628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1109466628'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;nav aria-label=&quot;Main&quot; class=&quot;hamburger-menu&quot;&gt;...&lt;/nav&gt; is not clickable at point (199, 237). Other element would receive the click: &lt;div id=&quot;survey_window&quot; class=&quot;modal fade modal-open out&quot; role=&quot;dialog&quot; style=&quot;margin-top: 170px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fceb83dfec5c25b1b50760ce54a0628a, clickElement {id=f.CCEC882696BB15172A333F26804C87C1.d.E05F933172F669A8503ECDB7D1146967.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51781/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fceb83dfec5c25b1b50760ce54a0628a)] -&gt; css selector: .hamburger-menu]
+Session ID: fceb83dfec5c25b1b50760ce54a0628a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at pages.SearchByDepartment.selectByDept(SearchByDepartment.java:29)
+	at test.ByDepartmentSelectionTest.selectByDept(ByDepartmentSelectionTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>test.ByDepartmentSelectionTest@3e2055d6</td></tr>
+<tr>
+<td title='test.MenuVaildationTest.validateMenu()'><b>validateMenu</b><br>Test class: test.MenuVaildationTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;c-button-unstyled plButton d-flex justify-content-center align-items-center&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; data-lid=&quot;hdr_utility_more&quot;&gt;...&lt;/button&gt; is not clickable at point (731, 171). Other element would receive the click: &lt;div id=&quot;survey_blue_border&quot; class=&quot;modal-dialog modal-custom&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8634bc8e2f08bda7c391dddcc04cf3dc, clickElement {id=f.E8C4891AC72711C0FB958AABBB136696.d.E40DC5CDBA342EEE75E67D6760BA59B9.e.13304}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49917}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49917/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8634bc8e2f08bda7c391dddcc04cf3dc)] -&gt; xpath: //button[@data-lid=&apos;hdr_utility_more&apos;]]
+Session ID: 8634bc8e2f08bda7c391dddcc04cf3dc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at pages.MenuValidation.navigateEachMenu(MenuValidation.java:47)
+	at test.MenuVaildationTest.validateMenu(MenuVaildationTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1337294771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337294771'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;c-button-unstyled plButton d-flex justify-content-center align-items-center&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; data-lid=&quot;hdr_utility_more&quot;&gt;...&lt;/button&gt; is not clickable at point (731, 171). Other element would receive the click: &lt;div id=&quot;survey_blue_border&quot; class=&quot;modal-dialog modal-custom&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8634bc8e2f08bda7c391dddcc04cf3dc, clickElement {id=f.E8C4891AC72711C0FB958AABBB136696.d.E40DC5CDBA342EEE75E67D6760BA59B9.e.13304}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49917}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49917/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8634bc8e2f08bda7c391dddcc04cf3dc)] -&gt; xpath: //button[@data-lid=&apos;hdr_utility_more&apos;]]
+Session ID: 8634bc8e2f08bda7c391dddcc04cf3dc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at pages.MenuValidation.navigateEachMenu(MenuValidation.java:47)
+	at test.MenuVaildationTest.validateMenu(MenuVaildationTest.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>46</td>
+<td>test.MenuVaildationTest@5167f57d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +259,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='test.SignInTest.signIn_ValidCred()'><b>signIn_ValidCred</b><br>Test class: test.SignInTest<br>Parameters: qaautomationtest111@gmail.com, Automation@123</td>
+<td></td>
+<td>10</td>
+<td>test.SignInTest@2438dcd</td></tr>
+<tr>
+<td title='test.ProductSearchAndFilterTest.searchProduct()'><b>searchProduct</b><br>Test class: test.ProductSearchAndFilterTest<br>Parameters: Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551</td>
+<td></td>
+<td>34</td>
+<td>test.ProductSearchAndFilterTest@64b0598</td></tr>
+<tr>
+<td title='test.ProductSearchAndFilterTest.searchProduct()'><b>searchProduct</b><br>Test class: test.ProductSearchAndFilterTest<br>Parameters: samsung mobiles, /site/samsung-pre-owned-galaxy-a14-5g-64gb-unlocked-black/6567177.p?skuId=6567177</td>
+<td></td>
+<td>37</td>
+<td>test.ProductSearchAndFilterTest@64b0598</td></tr>
+<tr>
+<td title='test.ByBrandSelectionTest.selectByBrand()'><b>selectByBrand</b><br>Test class: test.ByBrandSelectionTest<br>Parameters: HP, HP laptops, /site/hp-14-laptop-intel-celeron-4gb-memory-128gb-emmc-rose-gold/6569838.p?skuId=6569838</td>
+<td></td>
+<td>63</td>
+<td>test.ByBrandSelectionTest@50029372</td></tr>
+<tr>
+<td title='test.SignInTest.signIn_InValidCred()'><b>signIn_InValidCred</b><br>Test class: test.SignInTest<br>Parameters: qasurt@co, 123</td>
+<td></td>
+<td>7</td>
+<td>test.SignInTest@2438dcd</td></tr>
+<tr>
 <td title='test.AccountCreationTest.createAccount_InValidCred()'><b>createAccount_InValidCred</b><br>Test class: test.AccountCreationTest<br>Parameters: T, U, qasurt@co, 123, 123, 1234</td>
 <td></td>
-<td>148</td>
-<td>test.AccountCreationTest@503f91c3</td></tr>
+<td>14</td>
+<td>test.AccountCreationTest@7068e664</td></tr>
+<tr>
+<td title='test.BottomLinksTest.bottomLinkValidation()'><b>bottomLinkValidation</b><br>Test class: test.BottomLinksTest</td>
+<td></td>
+<td>75</td>
+<td>test.BottomLinksTest@24105dc5</td></tr>
+<tr>
+<td title='test.OrderPlaceTest.searchProduct()'><b>searchProduct</b><br>Test class: test.OrderPlaceTest<br>Parameters: Apple air pods, /site/apple-airpods-3rd-generation-with-lightning-charging-case-white/6376551.p?skuId=6376551, qaautomationtest111@gmail.com, 9.87654321E9, 123456.0, Test, User, 11, xxx cross street, xxx, xelo, TN, 132444.0</td>
+<td></td>
+<td>102</td>
+<td>test.OrderPlaceTest@18f8cd79</td></tr>
+<tr>
+<td title='test.AccountCreationTest.createAccount_ValidCred()'><b>createAccount_ValidCred</b><br>Test class: test.AccountCreationTest<br>Parameters: Test, User, qaautomationtest111@gmail.com, Automation@123, Automation@123, 9.87654321E9</td>
+<td></td>
+<td>15</td>
+<td>test.AccountCreationTest@7068e664</td></tr>
+<tr>
+<td title='test.ProductSearchAndFilterTest.filterSearchResults()'><b>filterSearchResults</b><br>Test class: test.ProductSearchAndFilterTest<br>Parameters: mouse, $75 - $99.99, Logitech, Wireless, Black</td>
+<td></td>
+<td>17</td>
+<td>test.ProductSearchAndFilterTest@64b0598</td></tr>
 </table><p>
 </body>
 </html>

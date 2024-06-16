@@ -25,12 +25,14 @@ public class SignInPage{
 	@FindBy(xpath = "//button[text()='Continue as Guest']")
 	WebElement guest_User;
 
+	//enter login credentials
 	public void enterLoginCredentials(String emailId,String password) {
 		signIn_EmailId.sendKeys(emailId);
 		signIn_Password.sendKeys(password);
 		signIn.click();
 	}
 	
+	//select guest user to place order
 	public void guestUser() {
 		guest_User.click();
 	}

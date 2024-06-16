@@ -11,13 +11,15 @@ import utils.Utility;
 public class ProjectSpecificationMethod extends Utility{
 
 	@Parameters({"siteUrl"})
-	@BeforeSuite	
+	@BeforeSuite
+	//check for the url is broken or not
 	public void validateUrlConnection(String siteUrl) throws IOException {			
 		urlConnectionValidation(siteUrl);		
 	}
 	
 	@Parameters({"browser","siteUrl","country"})
 	@BeforeMethod
+	//launch the browser and select country
 	public void launchBrowser(String browser, String siteUrl, String country) {
 		browserLaunch(browser,siteUrl);
 		selectCountry(country);
@@ -25,13 +27,14 @@ public class ProjectSpecificationMethod extends Utility{
 	
 	
 	@AfterMethod
+	//close the browser after each Test
 	public void closeBrowser() {
-	//	browserClose();
+		browserClose();
 	}
 	
 	@DataProvider
 	public String[][] valid_AccountCreationDetails() throws IOException {
-		return getExcelData("Valid_AccountCreationDetails");
+		return getExcelData("Valid_AccountCreationDetails"); //passing the sheet name of the excel to get data
 	}
 	
 	@DataProvider

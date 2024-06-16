@@ -6,18 +6,50 @@
 	</listeners>
 	
 	<parameter name="siteUrl" value="https://www.bestbuy.com/"></parameter>
-  <test thread-count="5" name="Test">
-	<parameter name="browser" value="chrome"></parameter>
+   
+  <test thread-count="5" name="ChromeTest">
+	<parameter name="browser" value="chrome"></parameter> 
 	<parameter name="country" value="US"></parameter>
     <classes>
       <class name="test.AccountCreationTest"/>
-      <!--class name="test.SignInTest"/-->
-      <!--class name="test.BottomLinksTest"/-->
-      <!--class name="test.MenuVaildationTest"/-->
-      <!--class name="test.ProductSearchAndFilterTest"/-->
-      <!--class name="test.OrderPlaceTest"/-->
-      <!--class name="test.ByDepartmentSelectionTest"/-->
-      <!--class name="test.ByBrandSelectionTest"/-->
+      <class name="test.SignInTest"/>
+      <class name="test.BottomLinksTest"/>
+      <class name="test.MenuVaildationTest"/>
+      <class name="test.ProductSearchAndFilterTest"/>
+      <class name="test.OrderPlaceTest"/>
+      <class name="test.ByDepartmentSelectionTest"/>
+      <class name="test.ByBrandSelectionTest"/>
     </classes>
   </test> <!-- Test -->
+  
+   <test thread-count="5" name="FirefoxTest">
+	<parameter name="browser" value="firefox"></parameter> 
+	<parameter name="country" value="US"></parameter>
+    <classes>
+      <class name="test.AccountCreationTest"/>
+      <class name="test.SignInTest"/>
+      <class name="test.BottomLinksTest"/>
+      <class name="test.MenuVaildationTest"/>
+      <class name="test.ProductSearchAndFilterTest"/>
+      <class name="test.OrderPlaceTest"/>
+      <class name="test.ByDepartmentSelectionTest"/>
+      <class name="test.ByBrandSelectionTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="HeadlessTest">
+	<parameter name="browser" value="headless"></parameter> 
+	<parameter name="country" value="US"></parameter>
+    <classes>
+      <class name="test.AccountCreationTest"/>
+      <class name="test.SignInTest"/>
+      <class name="test.BottomLinksTest"/>
+      <class name="test.MenuVaildationTest"/>
+      <class name="test.ProductSearchAndFilterTest"/>
+      <class name="test.OrderPlaceTest"/>
+      <class name="test.ByDepartmentSelectionTest"/>
+      <class name="test.ByBrandSelectionTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

@@ -8,6 +8,7 @@ import pages.SearchByDepartment;
 
 public class ByDepartmentSelectionTest extends ProjectSpecificationMethod{
 
+	//Add item to card through department selection
 	@Test(priority = 1, dataProvider = "searchByDept")
 	public void selectByDept(String department, String productCategory, String productSubCategory, String productUrl) {
 		SearchByDepartment searchByDeptObj = new SearchByDepartment(driver);

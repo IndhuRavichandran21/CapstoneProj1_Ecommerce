@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,18 +40,23 @@ public class PaymentPage {
 	@FindBy(css = "[data-track='Place your Order - Contact Card']")
 	WebElement placeOrder;
 	
-	
+	//enter payment details
 	public void paymentDetails(String cardNumber, String firstName, String lastName, String address, String city, String state, String zipCode) {
-		
+		int size = driver.findElements(By.id("billing-address-checkbox")).size();
+		if(size==1)
 		elementCardNumber.sendKeys(cardNumber);
-		elementFirstName.sendKeys(firstName);
-		elementLastName.sendKeys(lastName);
-		elementAddress.sendKeys(address);
-		elementCity.sendKeys(city);
+		else {
+			elementCardNumber.sendKeys(cardNumber);
+			elementFirstName.sendKeys(firstName);
+			elementLastName.sendKeys(lastName);
+			elementAddress.sendKeys(address);
+			elementCity.sendKeys(city);
+			
+			Select selectObj = new Select(elementState);
+			selectObj.selectByVisibleText(state);
+			elementZipCode.sendKeys(zipCode);
+		}
 		
-		Select selectObj = new Select(elementState);
-		selectObj.selectByVisibleText(state);
-		elementZipCode.sendKeys(zipCode);
 		placeOrder.click();
 		
 	}

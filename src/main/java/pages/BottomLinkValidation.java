@@ -40,11 +40,13 @@ public class BottomLinkValidation {
 	WebElement corporateInfoLink;
 	
 	List<WebElement> list = new ArrayList<>();
+	
 	public void validateBottomLinks() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true)", bottomLink);
 
+		//add the bottom links to list and iterate each link and validate with the title name
 		list.add(priceMatchLink);
 		list.add(contactUsLink);
 		list.add(affliatePrgmLink);

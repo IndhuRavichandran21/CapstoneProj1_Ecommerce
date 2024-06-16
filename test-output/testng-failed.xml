@@ -5,18 +5,113 @@
   <listeners>
     <listener class-name="utils.Listener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="country" value="US"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="test.OrderPlaceTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="placeOrder" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.OrderPlaceTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="country" value="US"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.OrderPlaceTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="placeOrder" invocation-numbers="0"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.OrderPlaceTest -->
+      <class name="test.ProductSearchAndFilterTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+          <include name="searchProduct" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- test.ProductSearchAndFilterTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="HeadlessTest(failed)">
+    <parameter name="country" value="US"/>
+    <parameter name="browser" value="headless"/>
+    <classes>
+      <class name="test.SignInTest">
+        <methods>
+          <include name="signIn_InValidCred"/>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="signIn_ValidCred"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.SignInTest -->
+      <class name="test.OrderPlaceTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="placeOrder"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.OrderPlaceTest -->
+      <class name="test.MenuVaildationTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateMenu"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.MenuVaildationTest -->
+      <class name="test.ByDepartmentSelectionTest">
+        <methods>
+          <include name="selectByDept"/>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.ByDepartmentSelectionTest -->
+      <class name="test.ProductSearchAndFilterTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="filterSearchResults"/>
+          <include name="closeBrowser"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- test.ProductSearchAndFilterTest -->
+      <class name="test.ByBrandSelectionTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+          <include name="selectByBrand"/>
+        </methods>
+      </class> <!-- test.ByBrandSelectionTest -->
+      <class name="test.BottomLinksTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateUrlConnection"/>
+          <include name="closeBrowser"/>
+          <include name="bottomLinkValidation"/>
+        </methods>
+      </class> <!-- test.BottomLinksTest -->
       <class name="test.AccountCreationTest">
         <methods>
           <include name="launchBrowser"/>
-          <include name="createAccount_InValidCred" invocation-numbers="0"/>
+          <include name="createAccount_InValidCred"/>
+          <include name="createAccount_ValidCred"/>
           <include name="validateUrlConnection"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- test.AccountCreationTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- HeadlessTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -12,30 +12,33 @@ import base.ProjectSpecificationMethod;
 public class Listener extends ProjectSpecificationMethod implements ITestListener{
 
 	ExtentReports extentReports = EcommerceReport.getReport();
-	ExtentTest test;
+	ExtentTest test; //to categorize the test report
 	String screenshotFilePath;
 	
 	@Override
 	public void onTestStart(ITestResult result) {
+		System.out.println(result.getMethod().getMethodName()+" is started");
 		test = extentReports.createTest(result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
+		System.out.println(result.getMethod().getMethodName()+" is passed");
 		test.log(Status.PASS, "Test Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+		System.out.println(result.getMethod().getMethodName()+" is failed");
 		
 		test.fail(result.getThrowable());
 		try {
-			screenshotFilePath = takeScreenshot(result.getMethod().getMethodName());
+			screenshotFilePath = takeScreenshot(result.getMethod().getMethodName());//In case of failure take screenshot
 		} 
 		catch (IOException e) {
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(screenshotFilePath,result.getMethod().getMethodName());
+		test.addScreenCaptureFromPath(screenshotFilePath,result.getMethod().getMethodName()); //add the screenshot to the test report
 		
 	}
 

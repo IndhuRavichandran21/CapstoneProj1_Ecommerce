@@ -7,6 +7,7 @@ import pages.SearchByBrand;
 
 public class ByBrandSelectionTest extends ProjectSpecificationMethod{
 
+	//Add item to card through brand selection
 	@Test(priority = 1, dataProvider = "searchByBrand")
 	public void selectByBrand(String brandName, String product, String productUrl) {
 		SearchByBrand searchByBrandObj = new SearchByBrand(driver);

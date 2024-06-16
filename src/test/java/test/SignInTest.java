@@ -9,6 +9,7 @@ import pages.SignInPage;
 
 public class SignInTest extends ProjectSpecificationMethod{
 	
+	//SignIn with valid credentials
 	@Test(priority = 1, dataProvider = "valid_signInDetails")
 	public void signIn_ValidCred(String emailId,String password) {
 		HomePage homePageObj = new HomePage(driver);
@@ -18,6 +19,7 @@ public class SignInTest extends ProjectSpecificationMethod{
 		signInPageObj.enterLoginCredentials(emailId, password);
 	}
 	
+	//SignIn with Invalid credentials
 	@Test(priority = 2, dataProvider = "invalid_signInDetails")
 	public void signIn_InValidCred(String emailId,String password) {
 		HomePage homePageObj = new HomePage(driver);

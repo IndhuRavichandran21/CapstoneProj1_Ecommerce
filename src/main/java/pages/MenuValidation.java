@@ -28,6 +28,7 @@ public class MenuValidation {
 	@FindBy(xpath = "//button[contains(@class,'menuCloseBtn ')]")
 	WebElement closeMenu;
 	
+	//validate each menu by verifying the title
 	public void navigateEachMenu() {
 		for(int i=0;i<menuBars.size();i++) {
 			WebElement menuBar=menuBars.get(i);
